@@ -39,8 +39,8 @@ They need to be installed first.
    The variables are used throughout the installation procedure.
 
     ```console
-    export GIT_ACCOUNT=docktermj
-    export GIT_REPOSITORY=hello-senzing-ibm-node-red
+    export GIT_ACCOUNT=senzing
+    export GIT_REPOSITORY=webapp-drillthrough-demo
     export SENZING_DEMO_URL="http://localhost:5000"
     export SENZING_DIR=/opt/senzing
     ```

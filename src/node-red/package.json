@@ -1,12 +1,12 @@
 {
-	"name": "hello-senzing-ibm-node-red",
+	"name": "webapp-drillthrough-demo",
 	"version": "1.0.0",
 	"description": "Demonstrate a node-red application of Senzing's entity resolution.",
 	"license": "Apache-2.0",
 	"author": "drangar@us.ibm.com",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/docktermj/hello-senzing-ibm-node-red.git"
+		"url": "https://github.com/senzing/webapp-drillthrough-demo.git"
 	},
 	"scripts": {
 		"preinstall": "npm install -g --unsafe-perm node-red node-red-dashboard"

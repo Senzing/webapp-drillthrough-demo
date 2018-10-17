@@ -1,4 +1,4 @@
-# hello-senzing-ibm-node-red
+# webapp-drillthrough-demo
 
 ## Overview
 
