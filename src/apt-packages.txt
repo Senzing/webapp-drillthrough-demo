@@ -1,0 +1,7 @@
+build-essential
+curl
+jq
+nodejs
+npm
+python-pip
+sqlite

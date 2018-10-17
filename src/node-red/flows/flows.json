@@ -1,0 +1,2213 @@
+[
+  {
+    "id": "e14d5b9b.94416",
+    "type": "tab",
+    "label": "G2 Portal",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "48349202.9b25dc",
+    "type": "tab",
+    "label": "Get G2 Status",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "603b26cc.6d47d",
+    "type": "tab",
+    "label": "Load G2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "6af909ef.1b68",
+    "type": "tab",
+    "label": "Search G2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "409bf0be.d4275",
+    "type": "tab",
+    "label": "G2 Data Sources",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "c8ade92b.ce35a8",
+    "type": "tab",
+    "label": "Export G2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "985539ec.3e48e",
+    "type": "ui_base",
+    "theme": {
+      "name": "theme-light",
+      "lightTheme": {
+        "default": "#0094CE",
+        "baseColor": "#0094CE",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+        "edited": true,
+        "reset": false
+      },
+      "darkTheme": {
+        "default": "#097479",
+        "baseColor": "#097479",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+        "edited": false
+      },
+      "customTheme": {
+        "name": "Untitled Theme 1",
+        "default": "#4B7930",
+        "baseColor": "#4B7930",
+        "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+      },
+      "themeState": {
+        "base-color": {
+          "default": "#0094CE",
+          "value": "#0094CE",
+          "edited": false
+        },
+        "page-titlebar-backgroundColor": {
+          "value": "#0094CE",
+          "edited": false
+        },
+        "page-backgroundColor": {
+          "value": "#fafafa",
+          "edited": false
+        },
+        "page-sidebar-backgroundColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "group-textColor": {
+          "value": "#1bbfff",
+          "edited": false
+        },
+        "group-borderColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "group-backgroundColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "widget-textColor": {
+          "value": "#111111",
+          "edited": false
+        },
+        "widget-backgroundColor": {
+          "value": "#0094ce",
+          "edited": false
+        },
+        "widget-borderColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "base-font": {
+          "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+        }
+      }
+    },
+    "site": {
+      "name": "Node-RED Dashboard",
+      "hideToolbar": "true",
+      "allowSwipe": "true",
+      "allowTempTheme": "false",
+      "dateFormat": "DD/MM/YYYY",
+      "sizes": {
+        "sx": 48,
+        "sy": 48,
+        "gx": 6,
+        "gy": 6,
+        "cx": 6,
+        "cy": 6,
+        "px": 0,
+        "py": 0
+      }
+    }
+  },
+  {
+    "id": "4a6e5b5c.7e111c",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Home",
+    "icon": "dashboard"
+  },
+  {
+    "id": "baec2b9e.878e98",
+    "type": "ui_group",
+    "z": "",
+    "name": "Default",
+    "tab": "4a6e5b5c.7e111c",
+    "disp": false,
+    "width": "20",
+    "collapse": false
+  },
+  {
+    "id": "3fea8cfb.329214",
+    "type": "ui_group",
+    "z": "",
+    "name": "Charts",
+    "tab": "5edce38a.12219c",
+    "order": 2,
+    "disp": false,
+    "width": "6"
+  },
+  {
+    "id": "33abc337.8f3e5c",
+    "type": "ui_group",
+    "z": "",
+    "name": "Inputs",
+    "tab": "5edce38a.12219c",
+    "order": 1,
+    "disp": false,
+    "width": "6"
+  },
+  {
+    "id": "6de2d989.b6551",
+    "type": "ui_group",
+    "z": "",
+    "name": "Group 3",
+    "tab": "5edce38a.12219c",
+    "order": 3,
+    "disp": false,
+    "width": "6"
+  },
+  {
+    "id": "5edce38a.12219c",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Charts",
+    "icon": "dashboard",
+    "order": 2
+  },
+  {
+    "id": "e9308c5a.aa659",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "",
+    "broker": "iot.eclipse.org",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "6fc4bb13.ea9f24",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "",
+    "broker": "iot.eclipse.org",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "b048320a.36e968",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Home",
+    "icon": "dashboard"
+  },
+  {
+    "id": "ad273aaa.f6c87",
+    "type": "ui_group",
+    "z": "",
+    "name": "Default",
+    "tab": "b048320a.36e968",
+    "disp": false,
+    "width": "20",
+    "collapse": false
+  },
+  {
+    "id": "291a76e.739d70a",
+    "type": "ui_group",
+    "z": "",
+    "name": "Charts",
+    "tab": "1cb8fc2c.1d4374",
+    "order": 2,
+    "disp": false,
+    "width": "6"
+  },
+  {
+    "id": "189e30.5ae7e9d1",
+    "type": "ui_group",
+    "z": "",
+    "name": "Inputs",
+    "tab": "1cb8fc2c.1d4374",
+    "order": 1,
+    "disp": false,
+    "width": "6"
+  },
+  {
+    "id": "4740d00e.2d1bc",
+    "type": "ui_group",
+    "z": "",
+    "name": "Group 3",
+    "tab": "1cb8fc2c.1d4374",
+    "order": 3,
+    "disp": false,
+    "width": "9",
+    "collapse": false
+  },
+  {
+    "id": "1cb8fc2c.1d4374",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Charts",
+    "icon": "dashboard",
+    "order": 2
+  },
+  {
+    "id": "ce0b25f2.48f528",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "",
+    "broker": "iot.eclipse.org",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "bc1cf462.98b6e8",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "",
+    "broker": "iot.eclipse.org",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "e78835f8.7cdae8",
+    "type": "inject",
+    "z": "603b26cc.6d47d",
+    "name": "Debug Invocation",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 240,
+    "y": 200,
+    "wires": [
+      [
+        "64915c10.bc4134"
+      ]
+    ]
+  },
+  {
+    "id": "64915c10.bc4134",
+    "type": "file in",
+    "z": "603b26cc.6d47d",
+    "name": "Read Input Data",
+    "filename": "",
+    "format": "utf8",
+    "chunk": false,
+    "sendError": false,
+    "x": 700,
+    "y": 200,
+    "wires": [
+      [
+        "83b0fbc2.e4a16"
+      ]
+    ]
+  },
+  {
+    "id": "83b0fbc2.e4a16",
+    "type": "csv",
+    "z": "603b26cc.6d47d",
+    "name": "Convert to CSV",
+    "sep": ",",
+    "hdrin": true,
+    "hdrout": "",
+    "multi": "one",
+    "ret": "\\n",
+    "temp": "",
+    "skip": "0",
+    "x": 240,
+    "y": 280,
+    "wires": [
+      [
+        "759a1576.2e4524"
+      ]
+    ]
+  },
+  {
+    "id": "15c4f189.9eae96",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Create HTTP GET URL for G2 AddRecords",
+    "func": "//msg.url=\"http://localhost:8080/ants_g2?dummy=\"+encodeURIComponent(msg.payload);\nmsg.url=global.get('senzing_url')+\"/addRecordStub?requestParams=\"+encodeURIComponent(msg.payload);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 330,
+    "y": 360,
+    "wires": [
+      [
+        "d2c7c35e.edc708"
+      ]
+    ]
+  },
+  {
+    "id": "759a1576.2e4524",
+    "type": "json",
+    "z": "603b26cc.6d47d",
+    "name": "Convert JSON object to JSON String",
+    "property": "payload",
+    "action": "str",
+    "pretty": false,
+    "x": 510,
+    "y": 280,
+    "wires": [
+      [
+        "15c4f189.9eae96"
+      ]
+    ]
+  },
+  {
+    "id": "7773dde9.bf123c",
+    "type": "http request",
+    "z": "603b26cc.6d47d",
+    "name": "Submit HTTP GET request",
+    "method": "GET",
+    "ret": "txt",
+    "url": "",
+    "tls": "",
+    "x": 280,
+    "y": 440,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "47f06bb8.824b7c",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Set Input File Name",
+    "func": "///root/images/customers.csv\nmsg.filename=msg.payload.txtInputFileName;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 470,
+    "y": 140,
+    "wires": [
+      [
+        "64915c10.bc4134"
+      ]
+    ]
+  },
+  {
+    "id": "edbe28c8.ed2fd",
+    "type": "http in",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "url": "/submitLoad",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 230,
+    "y": 80,
+    "wires": [
+      [
+        "315c6722.21f0c",
+        "47f06bb8.824b7c"
+      ]
+    ]
+  },
+  {
+    "id": "7fa2232e.683c34",
+    "type": "http response",
+    "z": "603b26cc.6d47d",
+    "name": "HTTP Response",
+    "statusCode": "",
+    "headers": {},
+    "x": 740,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "315c6722.21f0c",
+    "type": "template",
+    "z": "603b26cc.6d47d",
+    "name": "Dummy output template",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<div>{{msg.payload}}</div>",
+    "output": "str",
+    "x": 490,
+    "y": 80,
+    "wires": [
+      [
+        "7fa2232e.683c34"
+      ]
+    ]
+  },
+  {
+    "id": "5a475f59.7ff028",
+    "type": "http in",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "url": "/LoadG2",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 210,
+    "y": 21,
+    "wires": [
+      [
+        "8df0715a.2f3e1",
+        "ee7c9a9a.25afc"
+      ]
+    ]
+  },
+  {
+    "id": "b58bc941.24b238",
+    "type": "http response",
+    "z": "603b26cc.6d47d",
+    "name": "HTTP Response",
+    "statusCode": "",
+    "headers": {},
+    "x": 650,
+    "y": 21,
+    "wires": []
+  },
+  {
+    "id": "8df0715a.2f3e1",
+    "type": "template",
+    "z": "603b26cc.6d47d",
+    "name": "Load G2 screen",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n    <head>\n        <style>\ninput[type=text], select {\n    width: 100%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    display: inline-block;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\ninput[type=submit] {\n    width: 100%;\n    background-color: #4CAF50;\n    color: white;\n    padding: 14px 20px;\n    margin: 8px 0;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\n\ninput[type=button] {\n    width: 100%;\n    background-color: #4CAF50;\n    color: white;\n    padding: 14px 20px;\n    margin: 8px 0;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n}\ninput[type=submit]:hover {\n    background-color: #45a049;\n}\ninput[type=button]:hover {\n    background-color: #45a049;\n}\ndiv {\n    border-radius: 5px;\n    background-color: #f2f2f2;\n    padding: 20px;\n}\n</style>\n        <script language=\"JavaScript\">\n        function updateStatus() {\n            document.all.frmStatus.submit();\n        }\n        \n        function purgeG2Repository() {\n            document.all.frmPurge.submit();\n        }\n        function selMethod() {\n            // Get the checkbox\n            var checkBox = document.getElementById(\"chkMethod\");\n    \n            // If the checkbox is checked, display the output text\n            if (checkBox.checked == true){\n                document.all.loadDB.style.display = \"block\";\n                document.all.loadFile.style.display =\"none\";\n            } else {\n                document.all.loadDB.style.display = \"none\";\n                document.all.loadFile.style.display =\"block\";\n            }\n        }\n    \n        </script>\n    </head>\n    <body onload=\"JavaScript:updateStatus();\">\n        <form method=\"post\" id=\"frmPurge\" action=\"/purgeRepository\" target=\"frmInner\"></form>\n        Load from RDBMS:<input type=\"checkbox\" id=\"chkMethod\" name=\"chkMethod\" onclick=\"selMethod()\">\n        <div id=\"loadDB\" name=\"loadDB\" style=\"display:none;\">\n            <form method=\"post\" id=\"frmLoad\" action=\"/submitDBLoad\">\n            <table width=\"100%\" height=\"100%\">\n            <tr>\n                <td>\n                    JDBC Driver:\n                </td>\n                <td>\n                    <input type=\"text\" id=\"jdbcDriver\" name=\"jdbcDriver\" value=\"com.ibm.db2.jcc.DB2Driver\">\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    JDBC URL:\n                </td>\n                <td>\n                    <input type=\"text\" id=\"jdbcURL\" name=\"jdbcURL\" value=\"jdbc:db2://bluemix05.bluforcloud.com:50000/BLUDB\">\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    SQL SELECT Statement\n                </td>\n                <td>\n                    <input type=\"text\" id=\"sqlSELECT\" name=\"sqlSELECT\" value='SELECT customer_id,\"FirstName\",\"GenderCode\" from dash014018.dim_customers'>\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    DB User:\n                </td>\n                <td>\n                    <input type=\"text\" id=\"dbUser\" name=\"dbUser\" value=\"dash014018\">\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    DB Password:\n                </td>\n                <td>\n                    <input type=\"password\" id=\"dbPassword\" name=\"dbPassword\" value=\"8mv5MjTzEEXp\">\n                </td>\n            </tr>\n            <tr>\n                <td>\n                    # Rows to retrieve:\n                </td>\n                <td>\n                    <input type=\"text\" id=\"maxRows\" name=\"maxRows\" value=\"10\">\n                </td>\n            </tr>            <tr>\n                <td colspan=\"2\">\n                    <input type=\"submit\" value=\"Load G2 !\">\n                </td>\n            </tr>\n            </table>\n            </form>\n        </div>\n        <div id=\"loadFile\" name=\"loadFile\">\n        <form method=\"get\" id=\"frmStatus\" action=\"/g2status\" target=\"frmInner\"></form>\n\n        <form method=\"post\" id=\"frmLoad\" action=\"/submitLoad\" target=\"frmInner\">\n        <table width=\"100%\" height=\"100%\">\n            <tr>\n                <td>\n                     Input file name (CSV)\n                </td>\n                <td>\n                    <input type=\"text\" value=\"/root/images/customers_100.csv\" id=\"txtInputFileName\" name=\"txtInputFileName\">\n                </td>\n            </tr>\n            <tr>\n                <td colspan=\"2\">\n                    <input type=\"submit\" value=\"Load G2\">\n                    <input type=\"button\" value=\"G2 Summary\" OnClick=\"JavaScript:updateStatus();\">\n                    <input type=\"button\" value=\"Purge G2\" OnClick=\"JavaScript:purgeG2Repository();\">\n                </form>\n                </td>\n            </tr>\n            <tr height=\"70%\">\n                <td colspan=\"2\">\n                    <iframe id=\"frmInner\" name=\"frmInner\" width=\"100%\" height=\"100%\"></iframe>\n                </td>\n            </tr>\n        </table>\n        </form>\n        </div>\n    </body>\n</html>",
+    "output": "str",
+    "x": 440,
+    "y": 21,
+    "wires": [
+      [
+        "b58bc941.24b238"
+      ]
+    ]
+  },
+  {
+    "id": "4cf08380.02c804",
+    "type": "http in",
+    "z": "48349202.9b25dc",
+    "name": "",
+    "url": "/g2status",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 120,
+    "wires": [
+      [
+        "cd4ca338.94f5a"
+      ]
+    ]
+  },
+  {
+    "id": "b160e3e1.a1f8f8",
+    "type": "http request",
+    "z": "48349202.9b25dc",
+    "name": "Request G2 Status",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 370,
+    "y": 120,
+    "wires": [
+      [
+        "d43bade3.5fac9"
+      ]
+    ]
+  },
+  {
+    "id": "a61f9cd6.57dcf",
+    "type": "http response",
+    "z": "48349202.9b25dc",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 710,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "487f5ee.03ac4a",
+    "type": "debug",
+    "z": "48349202.9b25dc",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 690,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "fc7d0e48.827878",
+    "type": "function",
+    "z": "48349202.9b25dc",
+    "name": "HTML Status Table",
+    "func": "\n    var auditInfo=msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\n    msg.payload=\"<html><body>\";\n    msg.payload=msg.payload+\"<table width='50%'>\";\n    msg.payload=msg.payload+\"<tr><td colspan=2 align='center'><h2>G2 Summary Data</h2></td></tr>\";\n    msg.payload=msg.payload+\"</table>\";\n    for(var y=0;y<auditInfo.length;y++) {\n    \n    msg.payload=msg.payload+\"<table width='50%'>\";\n    msg.payload=msg.payload+\"<tr><td colspan=2>===========================================================</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>FROM Data Source</td><td>\"+auditInfo[y].FROM_DATA_SOURCE+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>TO Data Source</td><td>\"+auditInfo[y].TO_DATA_SOURCE+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>FROM Entity Count</td><td>\"+auditInfo[y].FROM_ENTITY_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>TO Entity Count</td><td>\"+auditInfo[y].TO_ENTITY_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>FROM Single Count</td><td>\"+auditInfo[y].FROM_SINGLE_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>TO Single Count</td><td>\"+auditInfo[y].TO_SINGLE_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>FROM Record Count</td><td>\"+auditInfo[y].FROM_RECORD_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>TO Record Count</td><td>\"+auditInfo[y].TO_RECORD_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>Matched Count</td><td>\"+auditInfo[y].MATCHED_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>Matched Entity Count</td><td>\"+auditInfo[y].MATCHED_ENTITY_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>Possible Match Count</td><td>\"+auditInfo[y].POSSIBLE_MATCH_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>Discovered Relationship Count</td><td>\"+auditInfo[y].DISCOVERED_RELATIONSHIP_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"<tr><td>Disclosed Relationship Count</td><td>\"+auditInfo[y].DISCLOSED_RELATIONSHIP_COUNT+\"</td></tr>\";\n    msg.payload=msg.payload+\"</table>\";\n    }\nmsg.payload=msg.payload+\"</body></html>\";\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 370,
+    "y": 180,
+    "wires": [
+      [
+        "487f5ee.03ac4a",
+        "a61f9cd6.57dcf"
+      ]
+    ]
+  },
+  {
+    "id": "112eb12b.4eb60f",
+    "type": "http in",
+    "z": "6af909ef.1b68",
+    "name": "Search Submit",
+    "url": "/searchsubmit",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 160,
+    "wires": [
+      [
+        "eed5b290.edc54"
+      ]
+    ]
+  },
+  {
+    "id": "b05f9b6c.50ef18",
+    "type": "http response",
+    "z": "6af909ef.1b68",
+    "name": "HTTP Response",
+    "statusCode": "",
+    "headers": {},
+    "x": 660,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "6a432da4.c516bc",
+    "type": "http request",
+    "z": "6af909ef.1b68",
+    "name": "Search GET",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 430,
+    "y": 160,
+    "wires": [
+      [
+        "2f17eeaa.b4d00a",
+        "57cb8787.0a8948"
+      ]
+    ]
+  },
+  {
+    "id": "eed5b290.edc54",
+    "type": "function",
+    "z": "6af909ef.1b68",
+    "name": "Search URL",
+    "func": "msg.url=global.get('senzing_url')+\"/searchRecord?requestParams=\"+encodeURIComponent('{\"NAME_FULL\":\"'+msg.payload.txtSearch+'\"}');\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 290,
+    "y": 220,
+    "wires": [
+      [
+        "6a432da4.c516bc"
+      ]
+    ]
+  },
+  {
+    "id": "d43bade3.5fac9",
+    "type": "switch",
+    "z": "48349202.9b25dc",
+    "name": "",
+    "property": "payload.SUMMARY_AUDIT_INFO.AUDIT_INFO.length",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "gte",
+        "v": "1",
+        "vt": "num"
+      },
+      {
+        "t": "lte",
+        "v": "0",
+        "vt": "num"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 130,
+    "y": 200,
+    "wires": [
+      [
+        "fc7d0e48.827878"
+      ],
+      [
+        "ffaf6a9.6396298"
+      ]
+    ]
+  },
+  {
+    "id": "ffaf6a9.6396298",
+    "type": "function",
+    "z": "48349202.9b25dc",
+    "name": "HTML Status Table",
+    "func": "    msg.payload=\"<html><body><table width='70%'>\";\n    msg.payload=msg.payload+\"<tr><td colspan=2 align='center'><h2>G2 Summary Data</h2></td></tr>\";\n    msg.payload=msg.payload+\"<tr><td colspan=2 align='center'>No record in G2</td></tr>\";\n    msg.payload=msg.payload+\"</body></html>\";\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 370,
+    "y": 240,
+    "wires": [
+      [
+        "a61f9cd6.57dcf"
+      ]
+    ]
+  },
+  {
+    "id": "6b22cb57.c401dc",
+    "type": "debug",
+    "z": "6af909ef.1b68",
+    "name": "Filtered list of attributes I care for",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "x": 600,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "2f17eeaa.b4d00a",
+    "type": "function",
+    "z": "6af909ef.1b68",
+    "name": "Create Search Results Table",
+    "func": "var entities=msg.payload.SEARCH_RESPONSE.RESOLVED_ENTITIES;\n\nvar strOutput=\"<html><body onload=\\\"JavaScript:document.ifrmRelated.tblRelated.style.display='none';\\\"><head><script language='JavaScript'>function showhide(rowid){if(eval('document.getElementById(\\\"'+rowid+'\\\")').style.display=='none'){eval('document.getElementById(\\\"'+rowid+'\\\")').style.display='block';}else{eval('document.getElementById(\\\"'+rowid+'\\\")').style.display='none';}\\ndocument.frmRelated.txtEntity.value=\\\"'\\\"+rowid+\\\"'\\\";document.frmRelated.submit();}\";\nstrOutput=strOutput+\"\\nfunction showRelated() {document.ifrmRelated.tblRelated.style.display='block';}\";\nstrOutput=strOutput+\"</script></head>\";\nstrOutput=strOutput+\"<form method=\\\"post\\\" action=\\\"/getRelatedEntities\\\" id=\\\"frmRelated\\\" name=\\\"frmRelated\\\" target=\\\"ifrmRelated\\\"><input type=\\\"hidden\\\" id=\\\"txtEntity\\\" name=\\\"txtEntity\\\"></form>\";\nstrOutput=strOutput+\"<H1>Search Results</H1>&nbsp;<a href=\\\"/g2embed\\\">Back</a>\";\nstrOutput=strOutput+\"<table width='100%' border=2>\";\nif(entities.length==0) {\n    strOutput=strOutput+\"<tr><td>I cant find this person, please <a href='/g2embed' target='_parent'>add</a>/import person's details</td></tr>\";\n}\n\nfor(var i=0;i<entities.length;i++) {\n    var entitySourcesData=entities[i].RECORDS;\n    var entitySources=\"\";\n    for(var x=0;x<entitySourcesData.length;x++) {\n        entitySources=entitySources+entitySourcesData[x].JSON_DATA.DATA_SOURCE+\",\";  \n    }\n    strOutput=strOutput+\"<tr><th>ENTITY_ID</th><th>Name</th><th>MATCH_KEY</th><th>Data Sources</th></tr>\";\n    strOutput=strOutput+\"<tr onclick='JavaScript:showhide(\\\"entity_\"+entities[i].ENTITY_ID+\"\\\");' style='cursor: pointer;'>\";\n    strOutput=strOutput+\"<td align='center'>\"+entities[i].ENTITY_ID+\"</td>\";\n    strOutput=strOutput+\"<td align='center'>\"+entities[i].FEATURES.NAME[0].FEAT_DESC+\"</td>\";\n    strOutput=strOutput+\"<td align='center'>\"+entities[i].MATCH_KEY+\"</td>\";\n    //strOutput=strOutput+\"<td align='center'>\"+entities[i].MATCH_SCORE+\"</td>\";\n    strOutput=strOutput+\"<td align='center'>\"+entitySources+\"</td>\";\n    strOutput=strOutput+\"</tr>\";\n    \n    strOutput=strOutput+\"</table>\";\n    \n    strOutput=strOutput+\"<table width='100%' height='35%' border=2 id='entity_\"+entities[i].ENTITY_ID+\"' style='display:none;'>\";\n    \n    var recordsdata=\"\";\n    var availablerecords=entities[i].RECORDS;\n    \n    //recordsdata=recordsdata+\"<table width='100%' border=2>\";\n    \n    //recordsdata=recordsdata+\"<tr><th>Record ID</th><th>Data Source</th><th>Entity Name</th><th>DOB</th></tr>\";\n    recordsdata=recordsdata+\"<tr><th>NAME</th><th>DATA SOURCE</th><th>ATTRIBUTES</th><th>IDENTIFIERS</th><th>ADDRESS</th><th>PHONE</th><th>RELATIONSHIP DATA</th><th>OTHER DATA</th></tr>\";\n\n    for(var x=0;x<availablerecords.length;x++) {\n        recordsdata=recordsdata+\"<tr>\";\n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x1=0;x1<availablerecords[x].NAME_DATA.length;x1++) {\n            recordsdata=recordsdata+availablerecords[x].NAME_DATA[x1]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        \n        recordsdata=recordsdata+\"<td align='center'>\";\n        recordsdata=recordsdata+availablerecords[x].JSON_DATA.DATA_SOURCE;\n        recordsdata=recordsdata+\"</td>\";\n        \n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x2=0;x2<availablerecords[x].ATTRIBUTE_DATA.length;x2++) {\n            recordsdata=recordsdata+availablerecords[x].ATTRIBUTE_DATA[x2]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x3=0;x3<availablerecords[x].IDENTIFIER_DATA.length;x3++) {\n            recordsdata=recordsdata+availablerecords[x].IDENTIFIER_DATA[x3]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x4=0;x4<availablerecords[x].ADDRESS_DATA.length;x4++) {\n            recordsdata=recordsdata+availablerecords[x].ADDRESS_DATA[x4]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x5=0;x5<availablerecords[x].PHONE_DATA.length;x5++) {\n            recordsdata=recordsdata+availablerecords[x].PHONE_DATA[x5]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x6=0;x6<availablerecords[x].RELATIONSHIP_DATA.length;x6++) {\n            recordsdata=recordsdata+availablerecords[x].RELATIONSHIP_DATA[x6]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n        \n        recordsdata=recordsdata+\"<td align='center'>\";\n        \n        for(var x7=0;x7<availablerecords[x].OTHER_DATA.length;x7++) {\n            recordsdata=recordsdata+availablerecords[x].OTHER_DATA[x7]+\"<br>\";\n        }\n        \n        recordsdata=recordsdata+\"</td>\";\n\n        recordsdata=recordsdata+\"</tr>\";\n    }\n    //recordsdata=recordsdata+\"</table>\";\n\n    strOutput=strOutput+recordsdata;\n    //strOutput=strOutput+\"</tr>\";\n\n}\nstrOutput=strOutput+\"<tr onclick=\\\"JavaScript:showRelated();\\\" width=\\\"100%\\\" height=\\\"100%\\\" style=\\\"cursor: pointer;\\\"><td colspan=8  width=\\\"100%\\\" height=\\\"100%\\\" bgcolor=\\\"#3B3736\\\"><font color=\\\"white\\\">Related Records</font></td></tr>\";\nstrOutput=strOutput+\"</table>\";\nstrOutput=strOutput+\"<div id=\\\"divRelated\\\" name=\\\"divRelated\\\"><iframe id=\\\"ifrmRelated\\\" name=\\\"ifrmRelated\\\" width=\\\"100%\\\" height=\\\"400\\\" scrolling=\\\"yes\\\" class=\\\"ifrmRelated\\\"></iframe></div>\";\nstrOutput=strOutput+\"</body></html>\";\n\nmsg.payload=strOutput;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 300,
+    "y": 340,
+    "wires": [
+      [
+        "6b22cb57.c401dc",
+        "b05f9b6c.50ef18"
+      ]
+    ]
+  },
+  {
+    "id": "57cb8787.0a8948",
+    "type": "debug",
+    "z": "6af909ef.1b68",
+    "name": "Search Results all of it",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "x": 640,
+    "y": 260,
+    "wires": []
+  },
+  {
+    "id": "9426843e.0cb97",
+    "type": "http response",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 570,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "fcd00d23.5cb458",
+    "type": "template",
+    "z": "e14d5b9b.94416",
+    "name": " ",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n<head>\n\n</head>    \n<body>\n<table width=\"100%\">\n    <tr>\n        <th colspan=3 align=\"center\">\n            {{req.query.title}}\n        </th>\n    </tr>\n    <tr>\n        <td>\n            <div id=\"selDS1\" name=\"selDS1\" style=\"font-size:7px;\"></div>\n        </td>\n        <td>\n            <canvas id=\"myCanvas1\" width=\"200\" height=\"150\" style=\"display:none;\">\n            Your browser does not support the HTML5 canvas tag.</canvas>\n        </td>\n        <td>\n            <div id=\"selDS2\" name=\"selDS2\" style=\"font-size:7px;\"></div>\n        </td>\n    </tr>\n</table>\n\n<script>\n//var c = document.getElementById(\"myCanvas\");\nfunction drawCanvas(canvasObj, vleft, vcenter, vright) {\n\n    canvasObj.style.display=\"block\";\n    \n\tvar ctx = canvasObj.getContext(\"2d\");\n\tctx.beginPath();\n\tctx.arc(65, 75, 50, 0, 2 * Math.PI);\n\tctx.stroke();\n\tctx.beginPath();\n\tctx.arc(130, 75, 50, 0, 2 * Math.PI);\n\tctx.stroke();\n\n\tctx.font = \"bold 16px Arial\";\n\tctx.fillText(vleft, (canvasObj.width / 2) - 67, (canvasObj.height / 2) + 8);\n\tctx.fillText(vcenter, (canvasObj.width / 2) - 17, (canvasObj.height / 2) + 8);\n\tctx.fillText(vright, (canvasObj.width / 3)+60, (canvasObj.height / 2) + 8);\n}\ndrawCanvas(document.getElementById(\"myCanvas1\"),{{req.query.val1}},{{req.query.val2}},{{req.query.val3}});\n\n</script> \n\n</body>\n</html>\n\n",
+    "output": "str",
+    "x": 350,
+    "y": 160,
+    "wires": [
+      [
+        "9426843e.0cb97"
+      ]
+    ]
+  },
+  {
+    "id": "4424438b.ae7574",
+    "type": "http in",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "url": "/piecharts",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 140,
+    "y": 160,
+    "wires": [
+      [
+        "fcd00d23.5cb458"
+      ]
+    ]
+  },
+  {
+    "id": "b64d83cc.1043f",
+    "type": "http in",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "url": "/g2embed",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 140,
+    "y": 60,
+    "wires": [
+      [
+        "540f109e.faacc8",
+        "e42d5b.11971aa8",
+        "2f86f152.23748e"
+      ]
+    ]
+  },
+  {
+    "id": "2f297168.91420e",
+    "type": "http response",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 620,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "540f109e.faacc8",
+    "type": "template",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n    <script language=\"JavaScript\">\n        var selectedDS1='';\n        var selectedDS2='';\n        \n        function callMe(dsID,msg) {\n            var val1=Math.floor((Math.random() * 100) + 1);\n            var val2=Math.floor((Math.random() * 100) + 1);\n            var val3=Math.floor((Math.random() * 100) + 1);\n            \n            if(dsID==1)\n                selectedDS1=msg;\n            else\n                selectedDS2=msg;\n            \n            //document.all.frmPieData1.action='/piedata?selectedDS1='+selectedDS1+'&selectedDS2='+selectedDS2;\n            //alert('/piedata?selectedDS1='+selectedDS1+'&selectedDS2='+selectedDS2);\n            document.all.frmPieData1.selectedDS1.value=selectedDS1;\n            document.all.frmPieData1.selectedDS2.value=selectedDS2;\n\n            document.all.frmPieData2.selectedDS1.value=selectedDS1;\n            document.all.frmPieData2.selectedDS2.value=selectedDS2;\n\n            document.all.frmPieData3.selectedDS1.value=selectedDS1;\n            document.all.frmPieData3.selectedDS2.value=selectedDS2;\n            \n            if(selectedDS1.length>0 && selectedDS2.length>0)\n            {\n                 document.all.frmPieData1.submit();\n            }\n\n        }\n        \n        function loadPie2() {\n             document.all.frmPieData2.submit();\n        }\n        \n        function loadPie3() {\n             document.all.frmPieData3.submit();\n        }\n    </script>\n    <body>\n        <form method=\"POST\" id=\"frmPieData1\" name=\"frmPieData1\" action=\"/piedata\" target=\"venn1\">\n            <input type=\"hidden\" id=\"selectedDS1\" name=\"selectedDS1\" />\n            <input type=\"hidden\" id=\"selectedDS2\" name=\"selectedDS2\" />\n            <input type=\"hidden\" id=\"title\" name=\"title\" value=\"Matches\" />\n        </form>\n        <form method=\"POST\" id=\"frmPieData2\" name=\"frmPieData2\" action=\"/piedata2\" target=\"venn2\">\n            <input type=\"hidden\" id=\"selectedDS1\" name=\"selectedDS1\" />\n            <input type=\"hidden\" id=\"selectedDS2\" name=\"selectedDS2\" />\n            <input type=\"hidden\" id=\"title\" name=\"title\" value=\"Possible Matches\" />\n        </form>\n        <form method=\"POST\" id=\"frmPieData3\" name=\"frmPieData3\" action=\"/piedata3\" target=\"venn3\">\n            <input type=\"hidden\" id=\"selectedDS1\" name=\"selectedDS1\" />\n            <input type=\"hidden\" id=\"selectedDS2\" name=\"selectedDS2\" />\n            <input type=\"hidden\" id=\"title\" name=\"title\" value=\"Possibly Related\" />\n        </form>\n        <table width=\"100%\" height=\"100%\" bgcolor=\"white\" border=2>\n            <tr>\n                <td colspan=3 width=\"100%\">\n                    <table width=\"100%\" height=\"100%\">\n                        <tr valign=\"top\">\n                            <td>\n                                <iframe src=\"/ui/#/0\" width=\"100%\" height=\"90%\" frameborder=\"0\"></iframe>\n                            </td>\n                        </tr>\n                    </table>\n                </td>\n            </tr>\n            <tr height=\"10%\">\n                <td colspan=3>\n                    <iframe src=\"/searchembed\" width=\"100%\" frameborder=\"0\" /></iframe>\n                </td>\n            </tr>\n            <tr height=\"5%\">\n                <td>\n                    <iframe src=\"/datasourceselect\" height=\"30%\" frameborder=\"0\" ></iframe>\n                </td>\n                <td>\n                    &nbsp;\n                </td>\n                <td>\n                    <iframe src=\"/datasourceselect2\" height=\"30%\" frameborder=\"0\" ></iframe>\n                </tr>\n            <tr height=\"30%\">\n                <td align=\"center\">\n                    <iframe sandbox=\"allow-same-origin allow-scripts allow-popups allow-forms allow-modals\" id=\"venn1\" name=\"venn1\" height=\"100%\" width=\"100%\" frameborder=\"0\" scrolling=\"no\" /></iframe>\n                </td>\n                <td align=\"center\">\n                    <iframe sandbox=\"allow-same-origin allow-scripts allow-popups allow-forms allow-modals\" id=\"venn2\" name=\"venn2\" height=\"100%\" width=\"100%\" frameborder=\"0\" scrolling=\"no\" /></iframe>\n                </td>\n                <td align=\"center\">\n                    <iframe sandbox=\"allow-same-origin allow-scripts allow-popups allow-forms allow-modals\" id=\"venn3\" name=\"venn3\" height=\"100%\" width=\"100%\" frameborder=\"0\" scrolling=\"no\" /></iframe>\n                </td>\n            </tr>\n        </table>\n    </body>\n</html>",
+    "output": "str",
+    "x": 380,
+    "y": 60,
+    "wires": [
+      [
+        "2f297168.91420e"
+      ]
+    ]
+  },
+  {
+    "id": "78bd1161.973b2",
+    "type": "http in",
+    "z": "6af909ef.1b68",
+    "name": "Search G2 Embed",
+    "url": "/searchembed",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 110,
+    "y": 60,
+    "wires": [
+      [
+        "c2fcc78.e32d6b8"
+      ]
+    ]
+  },
+  {
+    "id": "d576b260.7b6b58",
+    "type": "http response",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 730,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "c2fcc78.e32d6b8",
+    "type": "template",
+    "z": "6af909ef.1b68",
+    "name": "Search Form HTML",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n    <head>\n<style>\n.button {\n    background-color: #457EF0;\n    border: none;\n    color: white;\n    padding: 7px 22px;\n    text-align: center;\n    text-decoration: none;\n    display: inline-block;\n    font-size: 16px;\n    cursor: pointer;\n}\n</style>\n</head>\n    <body>\n        <form method=\"post\" action=\"/searchsubmit\" target=\"_parent\">\n        <table width=\"100%\">\n            <tr>\n                <td>Name:<br><input type=\"text\" id=\"txtSearch\" name=\"txtSearch\" size=\"55\"></td>\n                <td>Date of Birth:<br><input type=\"text\" id=\"txtDOB\" name=\"txtDOB\"></td>\n                <td>Identifier:<br><input type=\"text\" id=\"txtID\" name=\"txtID\" size=\"45\"></td>\n                <td>Type:<br><select id=\"txtIDType\" name=\"txtIDType\" size=\"1\"><option value=\"SSN\">SSN</option><option value=\"License\">Drivers License</option></select></SSN></option></td>\n                <td><input type=\"submit\" name=\"butSearch\" value=\"Search\" class=\"button\"></td>\n            </tr>\n            <tr>\n                <td>Address:<br><input type=\"text\" id=\"txtAddress\" name=\"txtAddress\" size=\"55\"></td>\n                <td>Phone:<br><input type=\"text\" id=\"txtPhone\" name=\"txtPhone\"></td>\n                <td>Email:<br><input type=\"text\" id=\"txtEmail\" name=\"txtEail\" size=\"55\"></td>\n                <td>&nbsp;</td>\n                <td>&nbsp;</td>\n            </tr>\n        </table>\n        </form>\n    </body>\n</html>",
+    "output": "str",
+    "x": 390,
+    "y": 60,
+    "wires": [
+      [
+        "d576b260.7b6b58"
+      ]
+    ]
+  },
+  {
+    "id": "580dafb.5642bd",
+    "type": "http in",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "url": "/datasourceselect",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 220,
+    "wires": [
+      [
+        "dadbe4d2.59f808"
+      ]
+    ]
+  },
+  {
+    "id": "bdc7bf2b.d3ddb8",
+    "type": "http request",
+    "z": "409bf0be.d4275",
+    "name": "G2 Data Sources HTTP GET",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 520,
+    "y": 220,
+    "wires": [
+      [
+        "3a9aff63.ed93e8"
+      ]
+    ]
+  },
+  {
+    "id": "3a9aff63.ed93e8",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "func": "var lookup = {};\nvar items = msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nvar result = [];\n\nfor (var item, i = 0; item = items[i++];) {\n  var name = item.FROM_DATA_SOURCE;\n\n  if (!(name in lookup)) {\n    lookup[name] = 1;\n    result.push({\"datasource\":name});\n  }\n}\nvar dsList=result;\nmsg.cnt=dsList.length;\nmsg.payload='<html><body onload=\"JavaScript:parent.selectedDS1=document.all.selid.value;parent.callMe(1,document.all.selid.value);\">';\n\nmsg.payload=msg.payload+'<select id=\"selid\" onchange=\"JavaScript:parent.callMe(1,this.value);\">';\nfor(var i=0;i<msg.cnt;i++)\n{\n    if(dsList[i]=='CUSTOMER')\n        msg.payload=msg.payload+\"<option value='\"+ dsList[i].datasource +\"' SELECTED>\"+dsList[i]+\"</option>\";\n    else\n        msg.payload=msg.payload+\"<option value='\"+ dsList[i].datasource +\"'>\"+dsList[i].datasource+\"</option>\";\n\n}\nmsg.payload=msg.payload+\"</select><body></html>\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 730,
+    "y": 220,
+    "wires": [
+      [
+        "f03e4c21.b955"
+      ]
+    ]
+  },
+  {
+    "id": "f03e4c21.b955",
+    "type": "http response",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 850,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "e5ba0a74.228ce8",
+    "type": "http in",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "url": "/piedata",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 260,
+    "wires": [
+      [
+        "8a7ed1f2.709b1"
+      ]
+    ]
+  },
+  {
+    "id": "a62c4a62.abe1f",
+    "type": "http response",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 670,
+    "y": 360,
+    "wires": []
+  },
+  {
+    "id": "1b76ab44.99c605",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "//msg.payload=\"<html><body>\"+msg.payload.selectedDS1+\"<br>\"+msg.payload.selectedDS2+\"</body></html>\";\nvar val1=Math.floor((Math.random() * 20) + 1);\nvar val2=Math.floor((Math.random() * 10) + 1);\nvar val3=Math.floor((Math.random() * 16) + 1);\n\n    val1= global.get('venn1lhs');\n    val2= global.get('venn1ctr');\n    val3= global.get('venn1rhs');\n\nif(msg.payload.title==\"Matches\") {\n    val1= global.get('venn1lhs');\n    val2= global.get('venn1ctr');\n    val3= global.get('venn1rhs');\n} else if(msg.payload.title==\"Possible Matches\") {\n    val1= global.get('venn2lhs');\n    val2= global.get('venn2ctr');\n    val3= global.get('venn2rhs');\n} else if(msg.payload.title==\"Possibly Related\") {\n    val1= global.get('venn3lhs');\n    val2= global.get('venn3ctr');\n    val3= global.get('venn3rhs');\n}\n\nvar strOutput=\"\";\nstrOutput=strOutput+\"<html>\";\nstrOutput=strOutput+\"<head>\";\nstrOutput=strOutput+\"<style>a.menu_links { cursor: hand; }</style>\";\nstrOutput=strOutput+\"</head>\";    \nstrOutput=strOutput+\"<body onload=\\\"JavaScript:parent.loadPie2();\\\">\";\nstrOutput=strOutput+\"<table width=\\\"100%\\\">\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <th colspan=3 align=\\\"center\\\">\";\nstrOutput=strOutput+ \"Matches\";\nstrOutput=strOutput+\"        </th>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS1\\\" name=\\\"selDS1\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td align=\\\"center\\\">\";\nstrOutput=strOutput+\"            <canvas id=\\\"myCanvas1\\\" width=\\\"200\\\" height=\\\"150\\\" style=\\\"display:none;\\\" onclick=\\\"JavaScript:window.open('/getaudit?selectedDS1=\"+global.get('selectedDS1')+\"&selectedDS2=\"+global.get('selectedDS2')+\"&matchLevel=1');\\\" onMouseOver=\\\"this.style.cursor='pointer'\\\">\";\nstrOutput=strOutput+\"            Your browser does not support the HTML5 canvas tag.</canvas>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS2\\\" name=\\\"selDS2\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"</table>\";\n\nstrOutput=strOutput+\"<script>\";\nstrOutput=strOutput+\"function drawCanvas(canvasObj, vleft, vcenter, vright) {\";\n\nstrOutput=strOutput+\"    canvasObj.style.display=\\\"block\\\";\";\n    \nstrOutput=strOutput+\"\tvar ctx = canvasObj.getContext(\\\"2d\\\");\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(65, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(130, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\n\nstrOutput=strOutput+\"\tctx.font = \\\"bold 16px Arial\\\";\";\nstrOutput=strOutput+\"\tctx.fillText(vleft, (canvasObj.width / 2) - 67, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vcenter, (canvasObj.width / 2) - 17, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vright, (canvasObj.width / 3)+60, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"}\";\nstrOutput=strOutput+\"drawCanvas(document.getElementById(\\\"myCanvas1\\\"),\"+val1+\",\"+val2+\",\"+ val3+\");\";\n\nstrOutput=strOutput+\"</script> \";\n\nstrOutput=strOutput+\"</body>\";\nstrOutput=strOutput+\"</html>\";\nmsg.payload=strOutput;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 510,
+    "y": 360,
+    "wires": [
+      [
+        "a62c4a62.abe1f"
+      ]
+    ]
+  },
+  {
+    "id": "26790a69.00cafe",
+    "type": "http request",
+    "z": "e14d5b9b.94416",
+    "name": "Request G2 Status",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 170,
+    "y": 360,
+    "wires": [
+      [
+        "62534f24.f71ee",
+        "ec993849.4c6ee"
+      ]
+    ]
+  },
+  {
+    "id": "62534f24.f71ee",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "var selectedDS1=global.get('selectedDS1');\nvar selectedDS2=global.get('selectedDS2');\n\nvar venn1lhs=0;\nvar venn1ctr=0;\nvar venn1rhs=0;\n\nvar venn2lhs=0;\nvar venn2ctr=0;\nvar venn2rhs=0;\n\nvar venn3lhs=0;\nvar venn3ctr=0;\nvar venn3rhs=0;\n\n\nvar baseMsg=msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nfor(var x=0;x<baseMsg.length;x++) {\n    \n    // To get Venn Diagram LHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS1) {\n        \n        venn1lhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2lhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3lhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n\n    }\n\n    // To get Venn Diagram RHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS2 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1rhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2rhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3rhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n    \n    // To get Venn Diagram Center\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1ctr=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2ctr=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3ctr=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n\n}\n\nmsg.payload.venn1lhs=venn1lhs;\nmsg.payload.venn1ctr=venn1ctr;\nmsg.payload.venn1rhs=venn1rhs;\n\nmsg.payload.venn2lhs=venn2lhs;\nmsg.payload.venn2ctr=venn2ctr;\nmsg.payload.venn2rhs=venn2rhs;\n\nmsg.payload.venn3lhs=venn3lhs;\nmsg.payload.venn3ctr=venn3ctr;\nmsg.payload.venn3rhs=venn3rhs;\n\nglobal.set('venn1lhs',venn1lhs);\nglobal.set('venn2lhs',venn2lhs);\nglobal.set('venn3lhs',venn3lhs);\n\nglobal.set('venn1rhs',venn1rhs);\nglobal.set('venn2rhs',venn2rhs);\nglobal.set('venn3rhs',venn3rhs);\n\nglobal.set('venn1ctr',venn1ctr);\nglobal.set('venn2ctr',venn2ctr);\nglobal.set('venn3ctr',venn3ctr);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 370,
+    "y": 360,
+    "wires": [
+      [
+        "1b76ab44.99c605"
+      ]
+    ]
+  },
+  {
+    "id": "8a7ed1f2.709b1",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "Save DS1 and DS2 to Global Properties",
+    "func": "global.set('selectedDS1',msg.payload.selectedDS1);\nglobal.set('selectedDS2',msg.payload.selectedDS2);\nmsg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 400,
+    "y": 260,
+    "wires": [
+      [
+        "26790a69.00cafe"
+      ]
+    ]
+  },
+  {
+    "id": "9aa25d54.2c74",
+    "type": "http in",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "url": "/piedata3",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 620,
+    "wires": [
+      [
+        "517e3bfe.7f72ac"
+      ]
+    ]
+  },
+  {
+    "id": "7b41fd2.5003b84",
+    "type": "http response",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 670,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "d7107096.c1e7a8",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "//msg.payload=\"<html><body>\"+msg.payload.selectedDS1+\"<br>\"+msg.payload.selectedDS2+\"</body></html>\";\nvar val1=Math.floor((Math.random() * 20) + 1);\nvar val2=Math.floor((Math.random() * 10) + 1);\nvar val3=Math.floor((Math.random() * 16) + 1);\n\n\n    val1= global.get('venn3lhs');\n    val2= global.get('venn3ctr');\n    val3= global.get('venn3rhs');\n\n\nvar strOutput=\"\";\nstrOutput=strOutput+\"<html>\";\nstrOutput=strOutput+\"<head>\";\nstrOutput=strOutput+\"</head>\";    \nstrOutput=strOutput+\"<body>\";\nstrOutput=strOutput+\"<table width=\\\"100%\\\">\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <th colspan=3 align=\\\"center\\\">\";\nstrOutput=strOutput+ \"Possibly Related\";\nstrOutput=strOutput+\"        </th>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS1\\\" name=\\\"selDS1\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td align=\\\"center\\\">\";\nstrOutput=strOutput+\"            <canvas id=\\\"myCanvas1\\\" width=\\\"200\\\" height=\\\"150\\\" style=\\\"display:none;\\\" onclick=\\\"JavaScript:window.open('/getaudit?selectedDS1=\"+global.get('selectedDS1')+\"&selectedDS2=\"+global.get('selectedDS2')+\"&matchLevel=3');\\\" onMouseOver=\\\"this.style.cursor='pointer'\\\">\";\nstrOutput=strOutput+\"            Your browser does not support the HTML5 canvas tag.</canvas>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS2\\\" name=\\\"selDS2\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"</table>\";\n\nstrOutput=strOutput+\"<script>\";\nstrOutput=strOutput+\"function drawCanvas(canvasObj, vleft, vcenter, vright) {\";\n\nstrOutput=strOutput+\"    canvasObj.style.display=\\\"block\\\";\";\n    \nstrOutput=strOutput+\"\tvar ctx = canvasObj.getContext(\\\"2d\\\");\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(65, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(130, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\n\nstrOutput=strOutput+\"\tctx.font = \\\"bold 16px Arial\\\";\";\nstrOutput=strOutput+\"\tctx.fillText(vleft, (canvasObj.width / 2) - 67, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vcenter, (canvasObj.width / 2) - 17, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vright, (canvasObj.width / 3)+60, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"}\";\nstrOutput=strOutput+\"drawCanvas(document.getElementById(\\\"myCanvas1\\\"),\"+val1+\",\"+val2+\",\"+ val3+\");\";\n\nstrOutput=strOutput+\"</script> \";\n\nstrOutput=strOutput+\"</body>\";\nstrOutput=strOutput+\"</html>\";\nmsg.payload=strOutput;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 470,
+    "y": 700,
+    "wires": [
+      [
+        "7b41fd2.5003b84"
+      ]
+    ]
+  },
+  {
+    "id": "79f78987.c19148",
+    "type": "http request",
+    "z": "e14d5b9b.94416",
+    "name": "Request G2 Status",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 150,
+    "y": 700,
+    "wires": [
+      [
+        "76b1cf14.40c768"
+      ]
+    ]
+  },
+  {
+    "id": "76b1cf14.40c768",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "var selectedDS1=global.get('selectedDS1');\nvar selectedDS2=global.get('selectedDS2');\n\nvar venn1lhs=0;\nvar venn1ctr=0;\nvar venn1rhs=0;\n\nvar venn2lhs=0;\nvar venn2ctr=0;\nvar venn2rhs=0;\n\nvar venn3lhs=0;\nvar venn3ctr=0;\nvar venn3rhs=0;\n\n\nvar baseMsg=msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nfor(var x=0;x<baseMsg.length;x++) {\n    \n    // To get Venn Diagram LHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS1) {\n        \n        venn1lhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2lhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3lhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n\n    }\n\n    // To get Venn Diagram RHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS2 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1rhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2rhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3rhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n    \n    // To get Venn Diagram Center\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1ctr=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2ctr=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3ctr=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n\n}\n\nmsg.payload.venn1lhs=venn1lhs;\nmsg.payload.venn1ctr=venn1ctr;\nmsg.payload.venn1rhs=venn1rhs;\n\nmsg.payload.venn2lhs=venn2lhs;\nmsg.payload.venn2ctr=venn2ctr;\nmsg.payload.venn2rhs=venn2rhs;\n\nmsg.payload.venn3lhs=venn3lhs;\nmsg.payload.venn3ctr=venn3ctr;\nmsg.payload.venn3rhs=venn3rhs;\n\nglobal.set('venn1lhs',venn1lhs);\nglobal.set('venn2lhs',venn2lhs);\nglobal.set('venn3lhs',venn3lhs);\n\nglobal.set('venn1rhs',venn1rhs);\nglobal.set('venn2rhs',venn2rhs);\nglobal.set('venn3rhs',venn3rhs);\n\nglobal.set('venn1ctr',venn1ctr);\nglobal.set('venn2ctr',venn2ctr);\nglobal.set('venn3ctr',venn3ctr);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 330,
+    "y": 700,
+    "wires": [
+      [
+        "d7107096.c1e7a8"
+      ]
+    ]
+  },
+  {
+    "id": "517e3bfe.7f72ac",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "Save DS1 and DS2 to Global Properties",
+    "func": "global.set('selectedDS1',msg.payload.selectedDS1);\nglobal.set('selectedDS2',msg.payload.selectedDS2);\nmsg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 400,
+    "y": 620,
+    "wires": [
+      [
+        "79f78987.c19148"
+      ]
+    ]
+  },
+  {
+    "id": "71418f59.ce4e18",
+    "type": "http in",
+    "z": "c8ade92b.ce35a8",
+    "name": "matched_entities",
+    "url": "/matched_entities",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 160,
+    "wires": [
+      [
+        "6dadfd0.361d084",
+        "9dc3d050.56d348"
+      ]
+    ]
+  },
+  {
+    "id": "23340a6d.8822d6",
+    "type": "http response",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 520,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "6dadfd0.361d084",
+    "type": "template",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "This is the payload: {{payload}} !",
+    "output": "str",
+    "x": 340,
+    "y": 180,
+    "wires": [
+      [
+        "23340a6d.8822d6"
+      ]
+    ]
+  },
+  {
+    "id": "9dc3d050.56d348",
+    "type": "debug",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "x": 360,
+    "y": 260,
+    "wires": []
+  },
+  {
+    "id": "af216788.954f9",
+    "type": "debug",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 730,
+    "y": 600,
+    "wires": []
+  },
+  {
+    "id": "bb4c57b3.fcd2d",
+    "type": "function",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "func": "var strOutput=\"<html><body><table border=1>\";\nvar allEntities=msg.payload;\n\nstrOutput=strOutput+\"<tr><th>Entity ID</th><th>Name Data</th><th>Data Source</th><th>Attribute Data</th><th>Idenitifier Data</th><th>Address Data</th><th>Other Data</th></tr>\";\n\nif(!Array.isArray(msg.payload))\n{\n    \n        strOutput=strOutput+\"<tr>\";\n    strOutput=strOutput+\"<td>\"+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ENTITY_ID+\"</td>\";\n    strOutput=strOutput+\"<td>\";\n    for(var x1=0;x1<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA.length;x1++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA[x1]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].DATA_SOURCE+\"<br>\";\n    \n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x3=0;x3<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA.length;x3++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA[x3]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x4=0;x4<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA.length;x4++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA[x4]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x5=0;x5<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA.length;x5++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA[x5]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x6=0;x6<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA.length;x6++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA[x6]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"</tr>\";\n    strOutput=strOutput+\"<tr>\";\n    strOutput=strOutput+\"<td>\";\n    strOutput=strOutput+ allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ENTITY_ID+\"<br>\";\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y1=0;y1<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA.length;y1++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].NAME_DATA[y1];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].DATA_SOURCE;\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y2=0;y2<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA.length;y2++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ATTRIBUTE_DATA[y2];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y3=0;y3<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA.length;y3++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].IDENTIFIER_DATA[y3];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y4=0;y4<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA.length;y4++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ADDRESS_DATA[y4];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y5=0;y5<allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA.length;y5++) {\n        strOutput=strOutput+allEntities.AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].OTHER_DATA[y5];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"</tr>\";\n    strOutput=strOutput+\"<tr><td colspan=7>&nbsp;</td></tr>\";\n}else {\nfor(var x=0;x<allEntities.length;x++) {\n    \n    strOutput=strOutput+\"<tr>\";\n    strOutput=strOutput+\"<td>\"+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ENTITY_ID+\"</td>\";\n    strOutput=strOutput+\"<td>\";\n    for(var x1=0;x1<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA.length;x1++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA[x1]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].DATA_SOURCE+\"<br>\";\n    \n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x3=0;x3<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA.length;x3++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA[x3]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x4=0;x4<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA.length;x4++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA[x4]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x5=0;x5<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA.length;x5++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA[x5]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"<td>\";\n    for(var x6=0;x6<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA.length;x6++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA[x6]+\"<br>\";\n    }\n    strOutput=strOutput+\"</td>\";\n\n    strOutput=strOutput+\"</tr>\";\n    strOutput=strOutput+\"<tr>\";\n    strOutput=strOutput+\"<td>\";\n    strOutput=strOutput+ allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ENTITY_ID+\"<br>\";\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y1=0;y1<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].NAME_DATA.length;y1++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].NAME_DATA[y1];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].DATA_SOURCE;\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y2=0;y2<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ATTRIBUTE_DATA.length;y2++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ATTRIBUTE_DATA[y2];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y3=0;y3<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].IDENTIFIER_DATA.length;y3++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].IDENTIFIER_DATA[y3];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y4=0;y4<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].ADDRESS_DATA.length;y4++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].ADDRESS_DATA[y4];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"<td>\";\n    for(var y5=0;y5<allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].BASE_RECORD[0].OTHER_DATA.length;y5++) {\n        strOutput=strOutput+allEntities[x].AUDIT_PAGE.AUDIT_GROUPS[0].AUDIT_RECORD[0].OTHER_DATA[y5];\n    }\n    strOutput=strOutput+\"</td>\";\n    \n    strOutput=strOutput+\"</tr>\";\n    strOutput=strOutput+\"<tr><td colspan=7>&nbsp;</td></tr>\";\n}\n}\nstrOutput=strOutput+\"</table></body></html>\";\nmsg.payload=strOutput;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 550,
+    "y": 520,
+    "wires": [
+      [
+        "af216788.954f9",
+        "d2696e74.dc2608"
+      ]
+    ]
+  },
+  {
+    "id": "710c7cb1.f773cc",
+    "type": "http in",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "url": "/getaudit",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 360,
+    "wires": [
+      [
+        "81a2db82.c55138"
+      ]
+    ]
+  },
+  {
+    "id": "d2696e74.dc2608",
+    "type": "http response",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 760,
+    "y": 460,
+    "wires": []
+  },
+  {
+    "id": "81a2db82.c55138",
+    "type": "function",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "func": "msg.payload=\"python $GIT_REPOSITORY_DIR/src/node-red/bin/G2_getAuditReport.py \" + msg.payload.selectedDS1+\" \"+msg.payload.selectedDS2+\" \"+msg.payload.matchLevel;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 130,
+    "y": 420,
+    "wires": [
+      [
+        "db7e53a9.4fe4f"
+      ]
+    ]
+  },
+  {
+    "id": "850e5fcc.28843",
+    "type": "http in",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "url": "/submitDBLoad",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 220,
+    "y": 800,
+    "wires": [
+      [
+        "86c8c4f7.de5da"
+      ]
+    ]
+  },
+  {
+    "id": "414afa10.42743c",
+    "type": "http response",
+    "z": "603b26cc.6d47d",
+    "name": "HTTP Respose",
+    "statusCode": "",
+    "headers": {},
+    "x": 860,
+    "y": 980,
+    "wires": []
+  },
+  {
+    "id": "ce5f08ea.8f5418",
+    "type": "debug",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "x": 850,
+    "y": 1060,
+    "wires": []
+  },
+  {
+    "id": "a4e5b664.2994f",
+    "type": "http request",
+    "z": "603b26cc.6d47d",
+    "name": "GET JDBC load",
+    "method": "GET",
+    "ret": "txt",
+    "url": "",
+    "tls": "",
+    "x": 280,
+    "y": 900,
+    "wires": [
+      [
+        "4c78979e.ddabd"
+      ]
+    ]
+  },
+  {
+    "id": "4c78979e.ddabd",
+    "type": "json",
+    "z": "603b26cc.6d47d",
+    "name": "Convert to JSON",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 530,
+    "y": 900,
+    "wires": [
+      [
+        "e9927534.d55118"
+      ]
+    ]
+  },
+  {
+    "id": "e9927534.d55118",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Get DB Data",
+    "func": "msg.payload=msg.payload.dbdata;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 830,
+    "y": 900,
+    "wires": [
+      [
+        "eee9e3cf.e10578"
+      ]
+    ]
+  },
+  {
+    "id": "eee9e3cf.e10578",
+    "type": "json",
+    "z": "603b26cc.6d47d",
+    "name": "Convert to JSON",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 290,
+    "y": 1000,
+    "wires": [
+      [
+        "bc6bbb7a.c0fb5"
+      ]
+    ]
+  },
+  {
+    "id": "86c8c4f7.de5da",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Set URL with request parameters",
+    "func": "var baseURL=\":8080/load_from_db?\";\n\nvar params=\"\";\n\nif(msg.payload.jdbcDriver!==\"\" || msg.payload.jdbcURL!==\"\" || msg.payload.dbUser!==\"\" || msg.payload.dbPassword!==\"\" || msg.payload.sqlSELECT!==\"\")\n    params=params+\"?\";\n    \nif(msg.payload.jdbcDriver!==\"\")\n    params=\"jdbcDriver=\"+encodeURI(msg.payload.jdbcDriver)+\"&\";\n    \nif(msg.payload.jdbcURL!==\"\")\n    params=params+\"jdbcURL=\"+encodeURI(msg.payload.jdbcURL)+\"&\";\n    \nif(msg.payload.dbUser!==\"\")\n    params=params+\"dbUser=\"+encodeURI(msg.payload.dbUser)+\"&\";\n\nif(msg.payload.dbPassword!==\"\")\n    params=params+\"dbPassword=\"+encodeURI(msg.payload.dbPassword)+\"&\";\n\nif(msg.payload.sqlSELECT!==\"\")\n    params=params+\"sqlSELECT=\"+encodeURI(msg.payload.sqlSELECT)+\"&\";\n\nif(msg.payload.maxRows!==\"\")\n    params=params+\"maxRows=\"+encodeURI(msg.payload.maxRows)+\"&\";\n\nmsg.url=baseURL+params;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 500,
+    "y": 800,
+    "wires": [
+      [
+        "a4e5b664.2994f"
+      ]
+    ]
+  },
+  {
+    "id": "bc6bbb7a.c0fb5",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Display Data",
+    "func": "var tblString=\"<table width='100%'>\";\n\nvar allItems=msg.payload;\nvar firstItem=msg.payload[0];\nvar jsonAttributes = Object.keys(firstItem);\n\ntblString=tblString+\"<tr>\";\nfor(var y=0;y<jsonAttributes.length;y++) {\n    tblString=tblString+\"<th>\"+jsonAttributes[y]+\"</th>\";\n}\ntblString=tblString+\"</tr>\";\n\nfor(var x=0;x<allItems.length;x++) {\ntblString=tblString+\"<tr>\";\n\n    jsonAttributes = Object.keys(allItems[x]).map(function(key) {\n        return allItems[x][key];\n    });\n    for(var y=0;y<jsonAttributes.length;y++) {\n        tblString=tblString+\"<td align='center'>\"+jsonAttributes[y]+\"</td>\";\n    }\ntblString=tblString+\"</tr>\";\n}\n\ntblString=tblString+\"</table>\";\n\nmsg.payload=tblString;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 550,
+    "y": 1000,
+    "wires": [
+      [
+        "ce5f08ea.8f5418",
+        "414afa10.42743c"
+      ]
+    ]
+  },
+  {
+    "id": "b9db0559.493028",
+    "type": "http in",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "url": "/getRelatedEntities",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 190,
+    "y": 500,
+    "wires": [
+      [
+        "6d80ff88.a77c78"
+      ]
+    ]
+  },
+  {
+    "id": "bc342be8.ce3148",
+    "type": "http response",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 660,
+    "y": 500,
+    "wires": []
+  },
+  {
+    "id": "6d80ff88.a77c78",
+    "type": "function",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "func": "var entityID=msg.payload.txtEntity;\nentityID=entityID.replace(/'/g,'');\nentityID=entityID.replace(/entity_/g,'');\n\nmsg.url=global.get('senzing_url')+\"/getEntityByID?entityid=\"+entityID;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 140,
+    "y": 620,
+    "wires": [
+      [
+        "58697f6.5040c8"
+      ]
+    ]
+  },
+  {
+    "id": "58697f6.5040c8",
+    "type": "http request",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "method": "GET",
+    "ret": "txt",
+    "url": "",
+    "tls": "",
+    "x": 340,
+    "y": 620,
+    "wires": [
+      [
+        "efd886f9.003d38",
+        "45843bf0.55f674"
+      ]
+    ]
+  },
+  {
+    "id": "efd886f9.003d38",
+    "type": "debug",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "x": 500,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "b0fd73bc.d06978",
+    "type": "debug",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 840,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "45843bf0.55f674",
+    "type": "json",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 620,
+    "y": 700,
+    "wires": [
+      [
+        "98feb403.91a2c8",
+        "b0fd73bc.d06978"
+      ]
+    ]
+  },
+  {
+    "id": "98feb403.91a2c8",
+    "type": "function",
+    "z": "6af909ef.1b68",
+    "name": "",
+    "func": "var relatedEntities=msg.payload.RELATED_ENTITIES;\nvar strOutput=\"<html><head><style>\";\nstrOutput=strOutput+\"@-webkit-keyframes invalid { from { background-color: red; } \\n to { background-color: inherit; }}\";\nstrOutput=strOutput+\"@-moz-keyframes invalid { from { background-color: red; } \\n to { background-color: inherit; }}\";\nstrOutput=strOutput+\"@-o-keyframes invalid { from { background-color: red; }\\n  to { background-color: inherit; }}\";\nstrOutput=strOutput+\"@keyframes invalid { from { background-color: red; } \\n to { background-color: inherit; }}\";\nstrOutput=strOutput+\".invalid {\\n -webkit-animation: invalid 1s infinite; /* Safari 4+ */ \\n -moz-animation:    invalid 1s infinite; /* Fx 5+ */ \\n -o-animation:      invalid 1s infinite; /* Opera 12+ */ \\n animation:         invalid 1s infinite; /* IE 10+ */ \\n}\";\nstrOutput=strOutput+\"td {\\n  padding: 1em; \\n}\";\n\nstrOutput=strOutput+\"</style></head><body>\";\nstrOutput=strOutput+\"<script language='JavaScript'>function selectEntity(rowid){document.frmSearch.txtSearch.value=\\\"'\\\"+rowid+\\\"'\\\";document.frmSearch.submit();}</script></head>\";\n\nstrOutput=strOutput+\"<form id=\\\"frmSearch\\\" name=\\\"frmSearch\\\" method=\\\"post\\\" action=\\\"/searchsubmit\\\" target=\\\"_parent\\\"><input type=\\\"hidden\\\" id=\\\"txtSearch\\\" name=\\\"txtSearch\\\"></form>\";\nstrOutput=strOutput+\"<table id=\\\"tblRelated\\\" name=\\\"tblRelated\\\" width=\\\"100%\\\" border=\\\"1\\\" style=\\\"display:none;\\\">\";\nstrOutput=strOutput+\"<tr><td>Entity ID</td><td>Match Level</td><td>Match Key</td><td>Name</td><td>Data Source</td></tr>\";\n\nfor(var x=0;x<relatedEntities.length;x++) {\n    strOutput=strOutput+\"<tr onclick=\\\"JavaScript:selectEntity('\"+ relatedEntities[x].FEATURES.NAME[0].FEAT_DESC +\"');\\\")>\";\n    strOutput=strOutput+\"<td>\"+relatedEntities[x].ENTITY_ID+\"</td>\";\n    strOutput=strOutput+\"<td>\"+relatedEntities[x].MATCH_LEVEL+\"</td>\";\n    strOutput=strOutput+\"<td>\"+relatedEntities[x].MATCH_KEY+\"</td>\";\n    strOutput=strOutput+\"<td>\"+relatedEntities[x].FEATURES.NAME[0].FEAT_DESC+\"</td>\";\n    var entityDS=\"\";\n    var styleClass=\"valid\";\n    for(var y=0;y<relatedEntities[x].RECORDS.length;y++) {\n        entityDS=entityDS+relatedEntities[x].RECORDS[y].JSON_DATA.DATA_SOURCE+\"<br>\";\n        if(relatedEntities[x].RECORDS[y].JSON_DATA.DATA_SOURCE==\"FRAUD_LIST\" || relatedEntities[x].RECORDS[y].JSON_DATA.DATA_SOURCE==\"SANCTION_LIST\") {\n            styleClass=\"invalid\";\n        }\n    }\n    strOutput=strOutput+\"<td class=\\\"\"+ styleClass +\"\\\">\"+entityDS+\"</td>\";\n    strOutput=strOutput+\"</tr>\";\n}\n\nstrOutput=strOutput+\"</table></body></html>\";\nmsg.payload=strOutput;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 720,
+    "y": 620,
+    "wires": [
+      [
+        "bc342be8.ce3148"
+      ]
+    ]
+  },
+  {
+    "id": "d2c7c35e.edc708",
+    "type": "delay",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "30",
+    "timeoutUnits": "milliseconds",
+    "rate": "5",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 710,
+    "y": 360,
+    "wires": [
+      [
+        "7773dde9.bf123c"
+      ]
+    ]
+  },
+  {
+    "id": "3a85adad.dff92a",
+    "type": "http request",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 470,
+    "y": 100,
+    "wires": [
+      [
+        "17de7cd4.a4341b"
+      ]
+    ]
+  },
+  {
+    "id": "17de7cd4.a4341b",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "Parse unique datasource names",
+    "func": "var lookup = {};\nvar items = msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nvar result = [];\n\nfor (var item, i = 0; item = items[i++];) {\n  var name = item.FROM_DATA_SOURCE;\n\n  if (!(name in lookup)) {\n    lookup[name] = 1;\n    result.push({\"datasource\":name});\n  }\n}\nvar dsList=result;\nmsg.cnt=dsList.length;\nmsg.payload=\"<html><body><table>\";\nmsg.payload=msg.payload+\"<tr><td><h2>List of Available G2 Data Sources<h2></td></tr>\";\nfor(var i=0;i<msg.cnt;i++)\n{\n    msg.payload=msg.payload+\"<tr><td>\"+dsList[i].datasource+\"</td></tr>\";\n}\nmsg.payload=msg.payload+\"</table><body></html>\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 100,
+    "wires": [
+      [
+        "80f5d295.47adb8"
+      ]
+    ]
+  },
+  {
+    "id": "34cd582a.3a01f",
+    "type": "http in",
+    "z": "409bf0be.d4275",
+    "name": "List G2 Data Sources",
+    "url": "/listG2DataSources",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 100,
+    "wires": [
+      [
+        "c9e29e08.4a3e28"
+      ]
+    ]
+  },
+  {
+    "id": "80f5d295.47adb8",
+    "type": "http response",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 890,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "3ead6b4d.34e794",
+    "type": "http in",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "url": "/datasourceselect2",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 300,
+    "wires": [
+      [
+        "69823944.c1fb58"
+      ]
+    ]
+  },
+  {
+    "id": "739c2992.9fc758",
+    "type": "http request",
+    "z": "409bf0be.d4275",
+    "name": "G2 Data Sources HTTP GET",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 380,
+    "y": 340,
+    "wires": [
+      [
+        "e9580484.890ee8"
+      ]
+    ]
+  },
+  {
+    "id": "e9580484.890ee8",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "func": "var lookup = {};\nvar items = msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nvar result = [];\n\nfor (var item, i = 0; item = items[i++];) {\n  var name = item.FROM_DATA_SOURCE;\n\n  if (!(name in lookup)) {\n    lookup[name] = 1;\n    result.push({\"datasource\":name});\n  }\n}\nvar dsList=result;\nmsg.cnt=dsList.length;\nmsg.payload='<html><body onload=\"JavaScript:parent.selectedDS1=document.all.selid.value;parent.callMe(2,document.all.selid.value);\">';\n\nmsg.payload=msg.payload+'<select id=\"selid\" onchange=\"JavaScript:parent.callMe(2,this.value);\">';\nfor(var i=0;i<msg.cnt;i++)\n{\n    if(dsList[i]=='TEST')\n        msg.payload=msg.payload+\"<option value='\"+ dsList[i].datasource +\"' SELECTED>\"+dsList[i]+\"</option>\";\n    else\n        msg.payload=msg.payload+\"<option value='\"+ dsList[i].datasource +\"'>\"+dsList[i].datasource+\"</option>\";\n\n}\nmsg.payload=msg.payload+\"</select><body></html>\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 590,
+    "y": 300,
+    "wires": [
+      [
+        "5f37be09.35bc88"
+      ]
+    ]
+  },
+  {
+    "id": "5f37be09.35bc88",
+    "type": "http response",
+    "z": "409bf0be.d4275",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 730,
+    "y": 300,
+    "wires": []
+  },
+  {
+    "id": "ba02889e.2f3e58",
+    "type": "http in",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "url": "/piedata2",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 440,
+    "wires": [
+      [
+        "a27bbc02.b8fd28"
+      ]
+    ]
+  },
+  {
+    "id": "581ffc52.191d9c",
+    "type": "http response",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 670,
+    "y": 520,
+    "wires": []
+  },
+  {
+    "id": "83b06c0c.17aca",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "//msg.payload=\"<html><body>\"+msg.payload.selectedDS1+\"<br>\"+msg.payload.selectedDS2+\"</body></html>\";\nvar val1=Math.floor((Math.random() * 20) + 1);\nvar val2=Math.floor((Math.random() * 10) + 1);\nvar val3=Math.floor((Math.random() * 16) + 1);\n\n\n    val1= global.get('venn2lhs');\n    val2= global.get('venn2ctr');\n    val3= global.get('venn2rhs');\n\nvar strOutput=\"\";\nstrOutput=strOutput+\"<html>\";\nstrOutput=strOutput+\"<head>\";\nstrOutput=strOutput+\"</head>\";    \nstrOutput=strOutput+\"<body onload=\\\"JavaScript:parent.loadPie3();\\\">\";\nstrOutput=strOutput+\"<table width=\\\"100%\\\">\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <th colspan=3 align=\\\"center\\\">\";\nstrOutput=strOutput+ \"Possible Matches\";\nstrOutput=strOutput+\"        </th>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"    <tr>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS1\\\" name=\\\"selDS1\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td align=\\\"center\\\">\";\nstrOutput=strOutput+\"            <canvas id=\\\"myCanvas1\\\" width=\\\"200\\\" height=\\\"150\\\" style=\\\"display:none;\\\" onclick=\\\"JavaScript:window.open('/getaudit?selectedDS1=\"+global.get('selectedDS1')+\"&selectedDS2=\"+global.get('selectedDS2')+\"&matchLevel=2');\\\" onMouseOver=\\\"this.style.cursor='pointer'\\\">\";\nstrOutput=strOutput+\"            Your browser does not support the HTML5 canvas tag.</canvas>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"        <td>\";\nstrOutput=strOutput+\"            <div id=\\\"selDS2\\\" name=\\\"selDS2\\\" style=\\\"font-size:7px;\\\"></div>\";\nstrOutput=strOutput+\"        </td>\";\nstrOutput=strOutput+\"    </tr>\";\nstrOutput=strOutput+\"</table>\";\n\nstrOutput=strOutput+\"<script>\";\nstrOutput=strOutput+\"function drawCanvas(canvasObj, vleft, vcenter, vright) {\";\n\nstrOutput=strOutput+\"    canvasObj.style.display=\\\"block\\\";\";\n    \nstrOutput=strOutput+\"\tvar ctx = canvasObj.getContext(\\\"2d\\\");\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(65, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\nstrOutput=strOutput+\"\tctx.beginPath();\";\nstrOutput=strOutput+\"\tctx.arc(130, 75, 50, 0, 2 * Math.PI);\";\nstrOutput=strOutput+\"\tctx.stroke();\";\n\nstrOutput=strOutput+\"\tctx.font = \\\"bold 16px Arial\\\";\";\nstrOutput=strOutput+\"\tctx.fillText(vleft, (canvasObj.width / 2) - 67, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vcenter, (canvasObj.width / 2) - 17, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"\tctx.fillText(vright, (canvasObj.width / 3)+60, (canvasObj.height / 2) + 8);\";\nstrOutput=strOutput+\"}\";\nstrOutput=strOutput+\"drawCanvas(document.getElementById(\\\"myCanvas1\\\"),\"+val1+\",\"+val2+\",\"+ val3+\");\";\n\nstrOutput=strOutput+\"</script> \";\n\nstrOutput=strOutput+\"</body>\";\nstrOutput=strOutput+\"</html>\";\nmsg.payload=strOutput;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 470,
+    "y": 520,
+    "wires": [
+      [
+        "581ffc52.191d9c"
+      ]
+    ]
+  },
+  {
+    "id": "d2b54a00.b5f34",
+    "type": "http request",
+    "z": "e14d5b9b.94416",
+    "name": "Request G2 Status",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 150,
+    "y": 520,
+    "wires": [
+      [
+        "7593e7c5.34f12"
+      ]
+    ]
+  },
+  {
+    "id": "7593e7c5.34f12",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "var selectedDS1=global.get('selectedDS1');\nvar selectedDS2=global.get('selectedDS2');\n\nvar venn1lhs=0;\nvar venn1ctr=0;\nvar venn1rhs=0;\n\nvar venn2lhs=0;\nvar venn2ctr=0;\nvar venn2rhs=0;\n\nvar venn3lhs=0;\nvar venn3ctr=0;\nvar venn3rhs=0;\n\n\nvar baseMsg=msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nfor(var x=0;x<baseMsg.length;x++) {\n    \n    // To get Venn Diagram LHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS1) {\n        \n        venn1lhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2lhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3lhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n\n    }\n\n    // To get Venn Diagram RHS\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS2 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1rhs=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2rhs=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3rhs=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n    \n    // To get Venn Diagram Center\n    if(baseMsg[x].FROM_DATA_SOURCE==selectedDS1 && baseMsg[x].TO_DATA_SOURCE==selectedDS2) {\n        \n        venn1ctr=baseMsg[x].MATCHED_ENTITY_COUNT;\n        venn2ctr=baseMsg[x].POSSIBLE_MATCH_COUNT;\n        venn3ctr=baseMsg[x].DISCOVERED_RELATIONSHIP_COUNT;\n        \n    }\n\n}\n\nmsg.payload.venn1lhs=venn1lhs;\nmsg.payload.venn1ctr=venn1ctr;\nmsg.payload.venn1rhs=venn1rhs;\n\nmsg.payload.venn2lhs=venn2lhs;\nmsg.payload.venn2ctr=venn2ctr;\nmsg.payload.venn2rhs=venn2rhs;\n\nmsg.payload.venn3lhs=venn3lhs;\nmsg.payload.venn3ctr=venn3ctr;\nmsg.payload.venn3rhs=venn3rhs;\n\nglobal.set('venn1lhs',venn1lhs);\nglobal.set('venn2lhs',venn2lhs);\nglobal.set('venn3lhs',venn3lhs);\n\nglobal.set('venn1rhs',venn1rhs);\nglobal.set('venn2rhs',venn2rhs);\nglobal.set('venn3rhs',venn3rhs);\n\nglobal.set('venn1ctr',venn1ctr);\nglobal.set('venn2ctr',venn2ctr);\nglobal.set('venn3ctr',venn3ctr);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 330,
+    "y": 520,
+    "wires": [
+      [
+        "83b06c0c.17aca"
+      ]
+    ]
+  },
+  {
+    "id": "a27bbc02.b8fd28",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "Save DS1 and DS2 to Global Properties",
+    "func": "global.set('selectedDS1',msg.payload.selectedDS1);\nglobal.set('selectedDS2',msg.payload.selectedDS2);\nmsg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 400,
+    "y": 440,
+    "wires": [
+      [
+        "d2b54a00.b5f34"
+      ]
+    ]
+  },
+  {
+    "id": "a6bb270.4c04558",
+    "type": "http request",
+    "z": "e14d5b9b.94416",
+    "name": "Request G2 Status",
+    "method": "GET",
+    "ret": "obj",
+    "url": "",
+    "tls": "",
+    "x": 190,
+    "y": 800,
+    "wires": [
+      [
+        "67bf6765.0ba62"
+      ]
+    ]
+  },
+  {
+    "id": "67bf6765.0ba62",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "var auditInfo=msg.payload.SUMMARY_AUDIT_INFO.AUDIT_INFO;\nvar filteredRecords = [];\nvar datasourceArray=[];\nvar arrayLabels=[];\nvar arrayCounts=[];\nvar totalCount=0;\n\nfor(var y=0;y<auditInfo.length;y++) {\n    if(auditInfo[y].FROM_DATA_SOURCE==auditInfo[y].TO_DATA_SOURCE) {\n        filteredRecords.push(auditInfo[y]);\n        arrayLabels.push(auditInfo[y].FROM_DATA_SOURCE);\n        arrayCounts.push(auditInfo[y].TO_RECORD_COUNT);\n        datasourceArray.push({\"DATA_SOURCE\":auditInfo[y].FROM_DATA_SOURCE,\"RECORD_COUNT\":auditInfo[y].TO_RECORD_COUNT});\n        totalCount=totalCount+1;\n    }   \n}\n    \n\nvar m = {};\nm.data = [arrayCounts];\nm.series = [\"G2 Record Count\"];\n\nvar m={\n    \"series\":[\"G2 Record Count\"],\n    \"data\":[arrayCounts],\n    \"labels\":arrayLabels\n};\n\nreturn {payload:[m]};\n//return {payload:[m],topic:\"Pie Title\"};\n//return msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 410,
+    "y": 800,
+    "wires": [
+      [
+        "72e0370c.0d477"
+      ]
+    ]
+  },
+  {
+    "id": "72e0370c.0d477",
+    "type": "ui_chart",
+    "z": "e14d5b9b.94416",
+    "name": "G2_DATA_PIE_CHART",
+    "group": "4740d00e.2d1bc",
+    "order": 0,
+    "width": "8",
+    "height": "5",
+    "label": "Data Across G2 Data Sources",
+    "chartType": "pie",
+    "legend": "true",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "",
+    "dot": false,
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "",
+    "removeOlderUnit": "3600",
+    "cutout": "30",
+    "useOneColor": false,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "useOldStyle": false,
+    "x": 640,
+    "y": 800,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "7f0ef903.ac08a8",
+    "type": "comment",
+    "z": "603b26cc.6d47d",
+    "name": "Loading G2 from RDBMS - NOT COMPLETE",
+    "info": "",
+    "x": 270,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "86d652b3.babb3",
+    "type": "http in",
+    "z": "603b26cc.6d47d",
+    "name": "Purge G2 Repository",
+    "url": "/purgeRepository",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 160,
+    "y": 540,
+    "wires": [
+      [
+        "1240fbc8.65a904"
+      ]
+    ]
+  },
+  {
+    "id": "789b9aef.3ac26c",
+    "type": "http request",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "method": "GET",
+    "ret": "txt",
+    "url": "",
+    "tls": "",
+    "x": 510,
+    "y": 540,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "e42d5b.11971aa8",
+    "type": "exec",
+    "z": "e14d5b9b.94416",
+    "command": "echo $SENZING_DEMO_URL",
+    "addpay": false,
+    "append": "",
+    "useSpawn": "false",
+    "timer": "",
+    "oldrc": false,
+    "name": "",
+    "x": 230,
+    "y": 940,
+    "wires": [
+      [
+        "2c948292.815ad6"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "2c948292.815ad6",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "global.set('senzing_url', msg.payload.slice(0, -1));\nmsg.deepak=global.get('senzing_url');\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 430,
+    "y": 880,
+    "wires": [
+      [
+        "e47efb97.26d56"
+      ]
+    ]
+  },
+  {
+    "id": "2f86f152.23748e",
+    "type": "function",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "func": "var url_string = global.get('senzing_url')+'/getSummaryData';\nmsg.url = url_string;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 160,
+    "y": 760,
+    "wires": [
+      [
+        "a6bb270.4c04558",
+        "9a7b6a1a.e604a8"
+      ]
+    ]
+  },
+  {
+    "id": "e47efb97.26d56",
+    "type": "debug",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "x": 600,
+    "y": 880,
+    "wires": []
+  },
+  {
+    "id": "b61dfc2d.47102",
+    "type": "inject",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 100,
+    "y": 1060,
+    "wires": [
+      [
+        "e42d5b.11971aa8"
+      ]
+    ]
+  },
+  {
+    "id": "9a7b6a1a.e604a8",
+    "type": "debug",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "x": 330,
+    "y": 760,
+    "wires": []
+  },
+  {
+    "id": "dadbe4d2.59f808",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "Get Senzing URL",
+    "func": "msg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 310,
+    "y": 180,
+    "wires": [
+      [
+        "bdc7bf2b.d3ddb8"
+      ]
+    ]
+  },
+  {
+    "id": "69823944.c1fb58",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "Get Senzing URL",
+    "func": "msg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 310,
+    "y": 260,
+    "wires": [
+      [
+        "739c2992.9fc758"
+      ]
+    ]
+  },
+  {
+    "id": "cd4ca338.94f5a",
+    "type": "function",
+    "z": "48349202.9b25dc",
+    "name": "Get Senzing URL",
+    "func": "msg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 290,
+    "y": 60,
+    "wires": [
+      [
+        "b160e3e1.a1f8f8"
+      ]
+    ]
+  },
+  {
+    "id": "1240fbc8.65a904",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "Get Senzing URL",
+    "func": "msg.url = global.get('senzing_url')+'/purgeRepository';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 350,
+    "y": 500,
+    "wires": [
+      [
+        "789b9aef.3ac26c"
+      ]
+    ]
+  },
+  {
+    "id": "c9e29e08.4a3e28",
+    "type": "function",
+    "z": "409bf0be.d4275",
+    "name": "Get Senzing URL",
+    "func": "msg.url = global.get('senzing_url')+'/getSummaryData';\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 310,
+    "y": 60,
+    "wires": [
+      [
+        "3a85adad.dff92a"
+      ]
+    ]
+  },
+  {
+    "id": "db7e53a9.4fe4f",
+    "type": "exec",
+    "z": "c8ade92b.ce35a8",
+    "command": "",
+    "addpay": true,
+    "append": "",
+    "useSpawn": "false",
+    "timer": "",
+    "oldrc": false,
+    "name": "",
+    "x": 300,
+    "y": 460,
+    "wires": [
+      [
+        "347c2ab8.b29f5e"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "347c2ab8.b29f5e",
+    "type": "json",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "property": "payload",
+    "action": "",
+    "pretty": false,
+    "x": 420,
+    "y": 500,
+    "wires": [
+      [
+        "bb4c57b3.fcd2d",
+        "23c917db.41201"
+      ]
+    ]
+  },
+  {
+    "id": "23c917db.41201",
+    "type": "debug",
+    "z": "c8ade92b.ce35a8",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 620,
+    "y": 440,
+    "wires": []
+  },
+  {
+    "id": "ec993849.4c6ee",
+    "type": "debug",
+    "z": "e14d5b9b.94416",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 550,
+    "y": 320,
+    "wires": []
+  },
+  {
+    "id": "ee7c9a9a.25afc",
+    "type": "exec",
+    "z": "603b26cc.6d47d",
+    "command": "echo $SENZING_DEMO_URL",
+    "addpay": false,
+    "append": "",
+    "useSpawn": "false",
+    "timer": "",
+    "oldrc": false,
+    "name": "",
+    "x": 490,
+    "y": 600,
+    "wires": [
+      [
+        "302c9d10.8aa1d2"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "302c9d10.8aa1d2",
+    "type": "function",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "func": "global.set('senzing_url', msg.payload.slice(0, -1));\nmsg.deepak=global.get('senzing_url');\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 690,
+    "y": 540,
+    "wires": [
+      [
+        "ed6f24de.5e17f"
+      ]
+    ]
+  },
+  {
+    "id": "ed6f24de.5e17f",
+    "type": "debug",
+    "z": "603b26cc.6d47d",
+    "name": "",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "x": 860,
+    "y": 540,
+    "wires": []
+  }
+]
