@@ -1,5 +1,9 @@
 # webapp-drillthrough-demo
 
+## :warning: Obsolete
+
+This repository has not been updated to use the RPM/DEB installation of Senzing.
+
 ## Overview
 
 This demonstration shows how to wrap Senzing with Python Flask to create a HTTP API and a simple application with Node-RED.
